@@ -2,6 +2,10 @@
 
 Static website mockup for the Private Practice Interest Group's preceptorship initiative.
 
+Live mockup: https://byte-kmrns.github.io/ppig-preceptorship-program/
+
+Public repo: https://github.com/byte-kmrns/ppig-preceptorship-program
+
 ## Files
 
 - `index.html` - full page website mockup
