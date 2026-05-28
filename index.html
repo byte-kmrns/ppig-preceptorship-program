@@ -6,17 +6,23 @@
     <title>Private Practice Preceptorship Program | PPIG</title>
     <meta
       name="description"
-      content="A draft website mockup for PPIG's DFW private practice preceptorship initiative connecting first-year medical students with private practice preceptors."
+      content="A website mockup for PPIG's DFW private practice preceptorship initiative connecting first-year medical students with private practice preceptors."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Private Practice Preceptorship Program home">
-        <span class="brand-mark" aria-hidden="true">PP</span>
+        <span class="shield" aria-hidden="true">
+          <svg viewBox="0 0 44 52" role="img">
+            <path d="M22 3 39 10v14c0 12.8-6.7 20.8-17 25C11.7 44.8 5 36.8 5 24V10L22 3Z" />
+            <path d="M22 12v27M15 20h14M15 29h14" />
+            <path d="M22 15c-4 0-7 3-7 6s3 5 7 5 7 2 7 5-3 6-7 6" />
+          </svg>
+        </span>
         <span>
-          <strong>PPIG</strong>
-          <em>Preceptorship Program</em>
+          <strong>Private Practice<br />Interest Group</strong>
+          <em>UNT HSC - DFW</em>
         </span>
       </a>
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
@@ -29,9 +35,9 @@
         <a href="#preceptors">Preceptors</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
-        <a class="nav-cta secondary" href="#student-interest">Student Interest</a>
+        <a class="nav-cta" href="mailto:ppigunthsc@gmail.com?subject=Student%20Interest%20-%20PPIG%20Preceptorship">Student Interest</a>
         <a
-          class="nav-cta"
+          class="nav-cta outline"
           href="https://docs.google.com/forms/d/e/1FAIpQLScCirYqVkEzpx2f71vSJLCnK1FMcqP2lDTocPS2L5KBrAxMhw/viewform?usp=publish-editor"
           target="_blank"
           rel="noreferrer"
@@ -42,300 +48,227 @@
     </header>
 
     <main id="top">
-      <section class="hero section-pad">
+      <section class="hero">
         <div class="hero-copy">
           <p class="small-label">Private Practice Interest Group</p>
           <h1>Private Practice Preceptorship Program</h1>
+          <span class="gold-rule" aria-hidden="true"></span>
           <p class="hero-lede">
-            Connecting first-year medical students with DFW private practice clinicians for meaningful shadowing,
-            mentorship, and a closer look at how independent practices run.
+            Connecting first-year medical students with DFW private practice clinicians for meaningful shadowing and
+            exposure to the business and operations of medicine.
           </p>
           <div class="hero-actions" aria-label="Program actions">
-            <a class="button primary" href="#student-interest">I am a student</a>
+            <a class="button primary" href="mailto:ppigunthsc@gmail.com?subject=Student%20Interest%20-%20PPIG%20Preceptorship">
+              <strong>I'm a Student</strong>
+              <span>Find a Preceptorship</span>
+            </a>
             <a
-              class="button ghost"
+              class="button secondary"
               href="https://docs.google.com/forms/d/e/1FAIpQLScCirYqVkEzpx2f71vSJLCnK1FMcqP2lDTocPS2L5KBrAxMhw/viewform?usp=publish-editor"
               target="_blank"
               rel="noreferrer"
             >
-              I can host students
+              <strong>I'm a Preceptor</strong>
+              <span>Offer a Preceptorship</span>
             </a>
           </div>
           <ul class="hero-points" aria-label="Program highlights">
-            <li><span aria-hidden="true">16</span> Required shadowing hours</li>
-            <li><span aria-hidden="true">DFW</span> Local private practices</li>
-            <li><span aria-hidden="true">MD</span> DO, PA, and NP preceptors</li>
+            <li>
+              <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2" /><circle cx="9.5" cy="7" r="4" /><path d="M22 20v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+              <span>MD, DO, PA, NP<br />Preceptors</span>
+            </li>
+            <li>
+              <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v6l4 2" /></svg>
+              <span>16 Required<br />Shadowing Hours</span>
+            </li>
+            <li>
+              <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" /><circle cx="12" cy="10" r="2.5" /></svg>
+              <span>DFW Area<br />Practices</span>
+            </li>
+            <li>
+              <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6h4" /><path d="M9 6V4h6v2" /><rect x="4" y="6" width="16" height="13" rx="2" /><path d="M9 13h6M12 10v6" /></svg>
+              <span>Real-World Practice<br />Exposure</span>
+            </li>
           </ul>
         </div>
 
-        <div class="hero-media" aria-label="Medical student shadowing with a private practice preceptor">
+        <figure class="hero-media" aria-label="Medical student shadowing with a private practice preceptor">
           <img src="./assets/clinic-preceptor-hero.png" alt="Medical student speaking with a private practice clinician in a clinic" />
-          <div class="match-panel" aria-label="Program match preview">
-            <span>Match flow</span>
-            <strong>Student interest -> PPIG review -> preceptor introduction</strong>
+        </figure>
+      </section>
+
+      <section class="program-board" id="program">
+        <div class="program-steps">
+          <div class="section-kicker">
+            <h2>How the program works</h2>
+          </div>
+          <article>
+            <span class="step-number">1</span>
+            <svg class="step-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6" /><path d="m15 15 5 5" /></svg>
+            <h3>Explore & Connect</h3>
+            <p>Students express interest and are matched with a private practice preceptor.</p>
+          </article>
+          <article>
+            <span class="step-number">2</span>
+            <svg class="step-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 11 3 3 7-7" /><path d="M3 12h3l3 7 4-14 3 7h5" /></svg>
+            <h3>Shadow & Learn</h3>
+            <p>Complete up to 16 hours of shadowing and gain insight into clinical care and practice operations.</p>
+          </article>
+          <article>
+            <span class="step-number">3</span>
+            <svg class="step-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="12" height="16" rx="2" /><path d="M9 9h6M9 13h6M9 17h3" /></svg>
+            <h3>Reflect & Complete</h3>
+            <p>Students complete program requirements and submit verification to fulfill shadowing hours.</p>
+          </article>
+        </div>
+
+        <div class="audience-grid">
+          <section class="audience-card student-card" id="students">
+            <h2>For Students</h2>
+            <span class="gold-rule short" aria-hidden="true"></span>
+            <ul class="check-list">
+              <li>Fulfill your 16 required shadowing hours</li>
+              <li>Explore private practice patient care</li>
+              <li>Learn about practice operations and workflows</li>
+              <li>Build relationships and professional networks</li>
+              <li>Clarify career interests early</li>
+            </ul>
+            <a class="text-link" href="mailto:ppigunthsc@gmail.com?subject=Student%20Interest%20-%20PPIG%20Preceptorship">Learn more about the student experience -></a>
+          </section>
+
+          <section class="audience-card preceptor-card" id="preceptors">
+            <h2>For Preceptors</h2>
+            <span class="gold-rule short" aria-hidden="true"></span>
+            <ul class="check-list navy-checks">
+              <li>Mentor future clinicians</li>
+              <li>Share the value of private practice medicine</li>
+              <li>Host flexible shadowing experiences</li>
+              <li>Strengthen the DFW medical community</li>
+              <li>Inspire the next generation</li>
+            </ul>
+            <a
+              class="text-link navy-link"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScCirYqVkEzpx2f71vSJLCnK1FMcqP2lDTocPS2L5KBrAxMhw/viewform?usp=publish-editor"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Learn more about becoming a preceptor ->
+            </a>
+          </section>
+        </div>
+      </section>
+
+      <section class="info-strip" aria-label="Program details">
+        <article>
+          <svg class="line-icon large" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v6l4 2" /></svg>
+          <div>
+            <h2>16-hour commitment</h2>
+            <p>
+              This program is designed for first-year medical students to complete 16 required shadowing hours in a
+              private practice setting. Hours can be completed over one or multiple days based on availability.
+            </p>
+          </div>
+        </article>
+        <article>
+          <svg class="line-icon large" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2" /><circle cx="9.5" cy="7" r="4" /><path d="M22 20v-2a4 4 0 0 0-3-3.87" /></svg>
+          <div>
+            <h2>Eligible specialties & providers</h2>
+            <p>
+              All clinical specialties are welcome. PPIG is seeking MD, DO, PA, and NP preceptors practicing in the DFW
+              area in a private practice setting.
+            </p>
+          </div>
+        </article>
+        <article>
+          <svg class="line-icon large" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11v2a2 2 0 0 0 2 2h3l6 4V5L8 9H5a2 2 0 0 0-2 2Z" /><path d="M17 9a4 4 0 0 1 0 6" /><path d="M19 6a8 8 0 0 1 0 12" /></svg>
+          <div>
+            <h2>Physician referrals</h2>
+            <p>
+              Know a clinician who would be a great preceptor? Send their name or make a warm introduction so PPIG can
+              grow meaningful opportunities for students.
+            </p>
+            <a class="text-link" href="mailto:ppigunthsc@gmail.com?subject=Private%20Practice%20Preceptorship%20Referral">Refer a physician -></a>
+          </div>
+        </article>
+      </section>
+
+      <section class="faq-section" id="faq">
+        <div class="section-kicker">
+          <h2>Frequently Asked Questions</h2>
+          <span class="gold-rule short" aria-hidden="true"></span>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Who is eligible to participate?</summary>
+            <p>First-year students seeking private practice shadowing and DFW-area MD, DO, PA, or NP preceptors may participate depending on fit and availability.</p>
+          </details>
+          <details>
+            <summary>What will students be doing during the shadowing?</summary>
+            <p>Students observe clinical care, patient communication, clinic workflow, and practice operations while following all site expectations.</p>
+          </details>
+          <details>
+            <summary>How do students get matched with a preceptor?</summary>
+            <p>PPIG collects student interest, reviews availability and goals, and makes introductions when a willing preceptor is available.</p>
+          </details>
+          <details>
+            <summary>Do preceptors need to complete any training?</summary>
+            <p>This mockup does not define official training requirements. PPIG should confirm school requirements before launch.</p>
+          </details>
+          <details>
+            <summary>Can I split my 16 hours across multiple days or sites?</summary>
+            <p>Potentially, depending on the student's official requirements and preceptor availability. Students should confirm documentation rules through the school process.</p>
+          </details>
+          <details>
+            <summary>How do I verify my hours?</summary>
+            <p>Students should follow the official verification or reflection process required by their academic program.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="cta-band" id="contact">
+        <div class="cta-copy">
+          <svg class="clipboard-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4h6l1 2h3v14H5V6h3l1-2Z" /><path d="M9 4v4h6V4" /></svg>
+          <div>
+            <h2>Ready to get involved?</h2>
+            <p>We'd love to connect students and preceptors across the DFW area.</p>
           </div>
         </div>
-      </section>
-
-      <section class="intro-band" aria-label="Program summary">
-        <div>
-          <span>16 hours</span>
-          <p>Designed to help students complete required shadowing time through private practice placements.</p>
-        </div>
-        <div>
-          <span>DFW area</span>
-          <p>Focused on local clinicians and practice settings students can realistically access.</p>
-        </div>
-        <div>
-          <span>Practice lens</span>
-          <p>Students learn not only clinical observation, but also scheduling, workflow, staffing, and ownership.</p>
-        </div>
-      </section>
-
-      <section class="section-pad" id="program">
-        <div class="section-heading narrow">
-          <p class="small-label">Program overview</p>
-          <h2>A structured shadowing bridge between first-year students and local private practices.</h2>
-          <p>
-            PPIG can serve as the connector: collecting student interest, identifying willing preceptors, clarifying
-            expectations, and helping both sides start the conversation with less friction.
-          </p>
-        </div>
-
-        <div class="steps" aria-label="How the program works">
-          <article>
-            <span>01</span>
-            <h3>Students apply</h3>
-            <p>First-year students share interests, availability, location constraints, and shadowing goals.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>PPIG matches</h3>
-            <p>The club reviews fit, availability, and preceptor capacity before making an introduction.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Shadow and reflect</h3>
-            <p>Students complete hours professionally, confirm documentation needs, and share feedback afterward.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="split-section section-pad" aria-label="Students and preceptors" id="students">
-        <div class="audience-panel student-panel">
-          <p class="small-label">For students</p>
-          <h2>Use shadowing time to understand the business and human side of care.</h2>
-          <p>
-            This initiative is for first-year students who want a practical private practice experience while working
-            toward their required 16 shadowing hours.
-          </p>
-          <ul class="check-list">
-            <li>Observe outpatient clinical flow and patient communication.</li>
-            <li>Learn how practices handle scheduling, staffing, billing pressure, and operations.</li>
-            <li>Build early mentorship relationships with local clinicians.</li>
-            <li>Complete hours with professionalism, punctuality, and respect for clinic policies.</li>
-          </ul>
-          <a class="button primary" href="#student-interest">Join the student list</a>
-        </div>
-
-        <div class="audience-panel preceptor-panel" id="preceptors">
-          <p class="small-label">For preceptors</p>
-          <h2>Host curious students without turning it into a heavy administrative lift.</h2>
-          <p>
-            PPIG is looking for private practice clinicians in the DFW area who are open to hosting first-year students
-            for observational shadowing.
-          </p>
-          <ul class="check-list">
-            <li>Eligible preceptors may include MDs, DOs, PAs, and NPs.</li>
-            <li>Scheduling can be based on your clinic capacity and comfort level.</li>
-            <li>Students are expected to follow clinic rules, dress standards, and privacy expectations.</li>
-            <li>Your practice can help students see how independent care is actually delivered.</li>
-          </ul>
+        <div class="cta-actions">
+          <a class="button light" href="mailto:ppigunthsc@gmail.com?subject=Student%20Interest%20-%20PPIG%20Preceptorship">I'm a Student</a>
           <a
-            class="button primary"
+            class="button dark-outline"
             href="https://docs.google.com/forms/d/e/1FAIpQLScCirYqVkEzpx2f71vSJLCnK1FMcqP2lDTocPS2L5KBrAxMhw/viewform?usp=publish-editor"
             target="_blank"
             rel="noreferrer"
           >
-            Share preceptor interest
+            I'm a Preceptor
           </a>
         </div>
-      </section>
-
-      <section class="hours section-pad" aria-labelledby="hours-title">
-        <div class="section-heading">
-          <p class="small-label">Shadowing commitment</p>
-          <h2 id="hours-title">A clearer path to the 16-hour requirement.</h2>
-          <p>
-            The site should make expectations obvious before anyone fills out a form. Students still need to confirm
-            final documentation and course requirements through the official school process.
-          </p>
-        </div>
-
-        <div class="timeline">
-          <article>
-            <span>Before</span>
-            <h3>Confirm fit</h3>
-            <p>Students submit availability, travel limits, specialty interests, and any required paperwork needs.</p>
-          </article>
-          <article>
-            <span>During</span>
-            <h3>Shadow professionally</h3>
-            <p>Students arrive on time, follow clinic policies, protect patient privacy, and stay within an observer role.</p>
-          </article>
-          <article>
-            <span>After</span>
-            <h3>Document hours</h3>
-            <p>Students complete the required reflection or verification process through their academic program.</p>
-          </article>
-          <article>
-            <span>Feedback</span>
-            <h3>Improve matching</h3>
-            <p>PPIG gathers short feedback from both sides to refine future placements and protect preceptor time.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="provider-section section-pad" aria-labelledby="provider-title">
-        <div class="provider-copy">
-          <p class="small-label">Provider network</p>
-          <h2 id="provider-title">Help PPIG find private practice clinicians willing to mentor early students.</h2>
-          <p>
-            If you know a clinician in the DFW area who may be open to hosting, the most useful next step is a warm
-            introduction or a quick share of the preceptor interest form.
-          </p>
-          <a
-            class="button ghost-dark"
-            href="mailto:ppigunthsc@gmail.com?subject=Private%20Practice%20Preceptorship%20Referral"
-          >
-            Email a referral
-          </a>
-        </div>
-        <div class="provider-grid" aria-label="Eligible providers and practice examples">
-          <article>
-            <h3>Eligible preceptors</h3>
-            <p>MD, DO, PA, or NP clinicians practicing in private or independent outpatient settings.</p>
-          </article>
-          <article>
-            <h3>Practice types</h3>
-            <p>Primary care, specialty clinics, procedural offices, direct care models, and small group practices.</p>
-          </article>
-          <article>
-            <h3>Ideal fit</h3>
-            <p>Clinicians who enjoy teaching, can model professionalism, and can explain practice operations.</p>
-          </article>
-          <article>
-            <h3>What to share</h3>
-            <p>Name, specialty, practice location, contact email, and whether a warm intro is possible.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="forms-section section-pad" id="student-interest">
-        <div class="section-heading narrow">
-          <p class="small-label">Interest forms</p>
-          <h2>Two simple paths, one coordinated program.</h2>
-          <p>
-            These forms are mockup UI for the improved site. The preceptor path also keeps the current Google Form link
-            available so the club can reuse its existing intake.
-          </p>
-        </div>
-
-        <div class="form-layout">
-          <form class="interest-form" data-mock-form>
-            <h3>Student interest</h3>
-            <label>
-              Full name
-              <input type="text" name="student-name" placeholder="Your name" />
-            </label>
-            <label>
-              Specialty interests
-              <input type="text" name="student-interest" placeholder="Family med, derm, ortho, private practice ops..." />
-            </label>
-            <label>
-              Availability
-              <textarea name="student-availability" rows="4" placeholder="Days, times, location limits, and any deadlines"></textarea>
-            </label>
-            <button class="button primary" type="submit">Save mock interest</button>
-            <p class="form-note" data-form-note aria-live="polite"></p>
-          </form>
-
-          <form class="interest-form" data-mock-form>
-            <h3>Preceptor interest</h3>
-            <label>
-              Practice or clinician name
-              <input type="text" name="preceptor-name" placeholder="Practice, clinician, or referral name" />
-            </label>
-            <label>
-              Provider type
-              <select name="provider-type">
-                <option>MD / DO</option>
-                <option>PA</option>
-                <option>NP</option>
-                <option>Other referral</option>
-              </select>
-            </label>
-            <label>
-              Best next step
-              <textarea name="preceptor-note" rows="4" placeholder="Contact info, location, specialty, or warm intro details"></textarea>
-            </label>
-            <div class="form-actions">
-              <button class="button primary" type="submit">Save mock referral</button>
-              <a
-                class="text-link"
-                href="https://docs.google.com/forms/d/e/1FAIpQLScCirYqVkEzpx2f71vSJLCnK1FMcqP2lDTocPS2L5KBrAxMhw/viewform?usp=publish-editor"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Open current Google Form
-              </a>
-            </div>
-            <p class="form-note" data-form-note aria-live="polite"></p>
-          </form>
-        </div>
-      </section>
-
-      <section class="faq section-pad" id="faq" aria-labelledby="faq-title">
-        <div class="section-heading">
-          <p class="small-label">FAQ</p>
-          <h2 id="faq-title">Questions the site should answer before sign-up.</h2>
-        </div>
-        <div class="faq-list">
-          <details>
-            <summary>Does this guarantee a placement?</summary>
-            <p>No. The program can collect interest and help coordinate introductions, but matching depends on preceptor availability, student fit, and scheduling.</p>
-          </details>
-          <details>
-            <summary>Who can serve as a preceptor?</summary>
-            <p>The initiative is seeking private practice MDs, DOs, PAs, and NPs in the DFW area who are willing to host first-year students for observational shadowing.</p>
-          </details>
-          <details>
-            <summary>What should students expect?</summary>
-            <p>Students should expect observational clinical exposure, professional conduct expectations, and a chance to ask thoughtful questions about practice operations when appropriate.</p>
-          </details>
-          <details>
-            <summary>Can someone refer a clinician?</summary>
-            <p>Yes. A warm introduction is ideal, but even a clinician name, specialty, practice location, and contact route can help PPIG start outreach.</p>
-          </details>
-        </div>
-      </section>
-
-      <section class="contact section-pad" id="contact" aria-label="Contact PPIG">
-        <div>
-          <p class="small-label">Contact</p>
-          <h2>Have a student question, preceptor lead, or referral?</h2>
-          <p>
-            Send PPIG the details and include whether the message is about student participation, preceptor interest, or
-            a possible clinician referral.
-          </p>
-        </div>
-        <a class="button primary" href="mailto:ppigunthsc@gmail.com">ppigunthsc@gmail.com</a>
       </section>
     </main>
 
     <footer class="footer">
-      <p>Private Practice Interest Group</p>
-      <p>Draft website mockup for the Private Practice Preceptorship Program.</p>
+      <a class="brand footer-brand" href="#top" aria-label="Private Practice Preceptorship Program home">
+        <span class="shield" aria-hidden="true">
+          <svg viewBox="0 0 44 52" role="img">
+            <path d="M22 3 39 10v14c0 12.8-6.7 20.8-17 25C11.7 44.8 5 36.8 5 24V10L22 3Z" />
+            <path d="M22 12v27M15 20h14M15 29h14" />
+            <path d="M22 15c-4 0-7 3-7 6s3 5 7 5 7 2 7 5-3 6-7 6" />
+          </svg>
+        </span>
+        <span>
+          <strong>Private Practice<br />Interest Group</strong>
+          <em>UNT HSC - DFW</em>
+        </span>
+      </a>
+      <div class="footer-contact">
+        <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" /><path d="m4 7 8 6 8-6" /></svg>
+        <div>
+          <a href="mailto:ppigunthsc@gmail.com">ppigunthsc@gmail.com</a>
+          <p>We look forward to partnering with you.</p>
+        </div>
+      </div>
+      <p>Private Practice Interest Group (PPIG)<br />Connecting students and private practice clinicians in the DFW area.</p>
     </footer>
 
     <script src="./app.js"></script>
