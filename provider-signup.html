@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Provider Sign Up | PPIG Preceptorship Program</title>
+    <meta name="description" content="Provider interest page for the PPIG Private Practice Preceptorship Program." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="./index.html" aria-label="Private Practice Preceptorship Program home">
+        <span class="shield" aria-hidden="true">
+          <svg viewBox="0 0 44 52" role="img">
+            <path d="M22 3 39 10v14c0 12.8-6.7 20.8-17 25C11.7 44.8 5 36.8 5 24V10L22 3Z" />
+            <path d="M22 12v27M15 20h14M15 29h14" />
+            <path d="M22 15c-4 0-7 3-7 6s3 5 7 5 7 2 7 5-3 6-7 6" />
+          </svg>
+        </span>
+        <span>
+          <strong>Private Practice<br />Interest Group</strong>
+          <em>UNT HSC - DFW</em>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" aria-label="Primary navigation" data-nav>
+        <a href="./program.html">Program</a>
+        <a href="./student-signup.html">Students</a>
+        <a href="./provider-signup.html" aria-current="page">Providers</a>
+        <a href="./faq.html">FAQ</a>
+        <a href="mailto:ppigunthsc@gmail.com">Contact</a>
+        <a class="nav-cta" href="./student-signup.html">Student Interest</a>
+        <a class="nav-cta outline" href="./provider-signup.html">Preceptor Interest</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero signup-hero">
+        <div>
+          <p class="small-label">Provider sign up</p>
+          <h1>Offer students a practical view of private practice medicine.</h1>
+          <span class="gold-rule" aria-hidden="true"></span>
+          <p>
+            PPIG is seeking DFW-area MD, DO, PA, and NP clinicians who are willing to host first-year students for
+            observational shadowing.
+          </p>
+        </div>
+        <aside class="summary-card provider-summary">
+          <h2>Fastest option</h2>
+          <p>Use the current provider interest form if you want to submit directly through PPIG's existing intake.</p>
+          <a
+            class="button secondary"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScCirYqVkEzpx2f71vSJLCnK1FMcqP2lDTocPS2L5KBrAxMhw/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open Google Form
+          </a>
+        </aside>
+      </section>
+
+      <section class="signup-layout">
+        <form class="signup-form" data-mailto-form data-subject="Provider Interest - PPIG Preceptorship">
+          <div class="form-heading">
+            <h2>Provider interest form</h2>
+            <p>This backup form creates an email draft to PPIG. The Google Form above is the current direct intake.</p>
+          </div>
+          <div class="field-grid">
+            <label>
+              Clinician or practice name
+              <input name="Clinician or practice name" type="text" required placeholder="Name or practice" />
+            </label>
+            <label>
+              Email
+              <input name="Email" type="email" required placeholder="contact@example.com" />
+            </label>
+          </div>
+          <div class="field-grid">
+            <label>
+              Provider type
+              <select name="Provider type">
+                <option>MD / DO</option>
+                <option>PA</option>
+                <option>NP</option>
+                <option>Referral / not sure</option>
+              </select>
+            </label>
+            <label>
+              Specialty
+              <input name="Specialty" type="text" placeholder="Primary care, derm, ortho, etc." />
+            </label>
+          </div>
+          <label>
+            Practice location
+            <input name="Practice location" type="text" placeholder="City or DFW area" />
+          </label>
+          <label>
+            Shadowing capacity or scheduling notes
+            <textarea name="Capacity or scheduling notes" rows="5" placeholder="Preferred days, number of students, half-day/full-day preferences, etc."></textarea>
+          </label>
+          <label>
+            Additional notes
+            <textarea name="Additional notes" rows="4" placeholder="Site expectations, contact preferences, warm intro details, or referral notes"></textarea>
+          </label>
+          <button class="button primary form-submit" type="submit">Create email draft</button>
+          <p class="form-note" data-form-note aria-live="polite"></p>
+        </form>
+
+        <aside class="side-panel blue-panel">
+          <h2>Good preceptor fit</h2>
+          <ul class="check-list navy-checks">
+            <li>Comfortable hosting students as observers</li>
+            <li>Interested in mentorship or career exposure</li>
+            <li>Can explain practice workflow and operations</li>
+            <li>Has a clear contact route for scheduling</li>
+          </ul>
+          <a class="text-link navy-link" href="./faq.html">Read provider FAQ -></a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand footer-brand" href="./index.html" aria-label="Private Practice Preceptorship Program home">
+        <span class="shield" aria-hidden="true">
+          <svg viewBox="0 0 44 52" role="img">
+            <path d="M22 3 39 10v14c0 12.8-6.7 20.8-17 25C11.7 44.8 5 36.8 5 24V10L22 3Z" />
+            <path d="M22 12v27M15 20h14M15 29h14" />
+            <path d="M22 15c-4 0-7 3-7 6s3 5 7 5 7 2 7 5-3 6-7 6" />
+          </svg>
+        </span>
+        <span>
+          <strong>Private Practice<br />Interest Group</strong>
+          <em>UNT HSC - DFW</em>
+        </span>
+      </a>
+      <div class="footer-contact">
+        <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" /><path d="m4 7 8 6 8-6" /></svg>
+        <div>
+          <a href="mailto:ppigunthsc@gmail.com">ppigunthsc@gmail.com</a>
+          <p>We look forward to partnering with you.</p>
+        </div>
+      </div>
+      <p>Private Practice Interest Group (PPIG)<br />Connecting students and private practice clinicians in the DFW area.</p>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
